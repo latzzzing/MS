@@ -1,0 +1,9 @@
+- [Messages 이미지 전송 방법](feedback_messages_image.md) — 메뉴바 클릭 방식으로 Preview→Messages 이미지 전송 자동화
+- [정산서 폴더 구조](project_settlement_folders.md) — 쿠팡/배민 정산서 경로 및 파일명에서 수신자 정보 추출 규칙
+- [정산서 전송 규칙](feedback_settlement_send_rules.md) — A1:E17 먼저, G2에 데이터 있으면 CurrentRegion 추가 전송
+- [관제 크론 금지](feedback_no_gwanje_cron.md) — 관제 크론은 다른 Mac(ms 계정)에서 돌고 있어 이 Mac에서 중복 실행 금지
+- [관제 스크립트 구조](project_gwanje_scripts.md) — OneDrive/프로젝트/telegram_claude_bot 내 관제·로그인 스크립트 위치와 연계
+- [일괄 발송 시스템](project_send_batch.md) — ~/send_batch/ 경로와 2026-04-18 10:00 launchd 예약 현황
+- [Contacts 업데이트 규칙](feedback_contacts_update_rule.md) — 기존 연락처 보존, 신규만 추가, 번호 변경은 사용자 수동 지시 시만
+- [배민/쿠팡 하루 기준](project_baemin_coupang_day_rule.md) — 06시~익일03시가 하루, 배민 rider-history URL 형식
+- [배민 deliverycenter size 상한](project_baemin_rider_list_url.md) — size=100이 상한, 그 이상은 default(20) 폴백. 페이지네이션 필요
