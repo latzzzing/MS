@@ -7,3 +7,6 @@
 - [Contacts 업데이트 규칙](feedback_contacts_update_rule.md) — 기존 연락처 보존, 신규만 추가, 번호 변경은 사용자 수동 지시 시만
 - [배민/쿠팡 하루 기준](project_baemin_coupang_day_rule.md) — 06시~익일03시가 하루, 배민 rider-history URL 형식
 - [배민 deliverycenter size 상한](project_baemin_rider_list_url.md) — size=100이 상한, 그 이상은 default(20) 폴백. 페이지네이션 필요
+- [메모리 동기화 구조](project_memory_sync_setup.md) — OneDrive 실시간 + GitHub 수동 백업 (이 Mac 에서만 git)
+- [임대 내역 장부](project_rental_ledger.md) — 이륜차 렌탈 .xlsx 신규 기사 컬럼 추가 규칙 (2/3열, 수식, 컬럼폭)
+- [기존 데이터 삭제 금지](feedback_no_data_deletion.md) — 장부/공유 문서 자동화 시 기존 셀 절대 덮어쓰지 말 것
