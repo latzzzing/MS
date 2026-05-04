@@ -23,5 +23,12 @@ originSessionId: 94539b67-543d-4b15-8e87-a5a4e0afa668
   - `telegram_claude_bot/bot.py` `_coupang_do_2fa` → `"Google"` 로 수정 완료 (2026-05-02). 사용자가 텔레그램에서 `check_coupang_dashboard` 같이 쿠팡 세션을 트리거하는 요청 시 발생하던 에러.
   - `telegram_claude_bot/coupang_relogin.sh` 는 그대로 두기 (다른 Mac, ms 계정 쪽에서 도는 스크립트라 거기 Mail 계정 이름이 정확히 맞을 가능성).
 
+**~/send_batch/login 스크립트 재작성 (2026-05-04):**
+이전 버전 (sleep 8 + URL 패턴 탭 찾기 + retry 등) 의 안정성이 떨어져서, **gwanje 의 검증된 relogin 스크립트 로직을 베이스로 다시 작성:**
+- `coupang_login.sh` ← `coupang_relogin.sh` 기반 + Patch (Mail 계정 "Google", .env 에서 ID/PW 읽기, stdout 로그, SUCCESS/FAIL 출력)
+- `baemin_login.sh` ← `baemin_relogin.sh` 기반 + Patch (.env 에서 BAEMIN_ID/PW 읽기, stdout 로그, SUCCESS/FAIL 출력)
+- 봇.py 호출 경로는 그대로 (~/send_batch/) 라 봇 코드 변경 없음.
+- gwanje 의 relogin 이 업데이트되면 동일 패치 다시 적용 (위 두 가지 patch 만 손대면 됨).
+
 **Why:** 관제는 권역별 물량 잔여를 시간대 피크별로 KakaoTalk 공지방에 자동 전송하는 업무임. 로그인 세션은 하루 단위로 만료되어 재로그인 필요.
 **How to apply:** 로그인 복구만 요청받았을 때 `coupang_relogin.sh` 또는 `baemin_relogin.sh`를 일회성으로 실행. 크론/launchd 등록은 이 Mac에서 절대 하지 말 것 (feedback_no_gwanje_cron 참조).

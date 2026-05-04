@@ -10,3 +10,4 @@
 - [메모리 동기화 구조](project_memory_sync_setup.md) — OneDrive 실시간 + GitHub 수동 백업 (이 Mac 에서만 git)
 - [임대 내역 장부](project_rental_ledger.md) — 이륜차 렌탈 .xlsx 신규 기사 컬럼 추가 규칙 (2/3열, 수식, 컬럼폭)
 - [기존 데이터 삭제 금지](feedback_no_data_deletion.md) — 장부/공유 문서 자동화 시 기존 셀 절대 덮어쓰지 말 것
+- [메인 모뎀 admin](project_modem_admin.md) — LG U+ GAPM-7500R 192.168.219.1 비번 + CCTV 포워딩 메뉴 위치
