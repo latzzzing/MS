@@ -13,3 +13,4 @@
 - [메인 모뎀 admin](project_modem_admin.md) — LG U+ GAPM-7500R 192.168.219.1 비번 + CCTV 포워딩 메뉴 위치
 - [라이더 마스터 JSON](project_riders_json.md) — ~/send_batch/riders.json (511명) 빌더 + 봇 lookup_rider_region 도구 통합
 - [Chrome AppleScript JS 토글](feedback_chrome_applescript_js.md) — 자동 로그인 실패 시 1순위 의심: 보기→개발자 정보→"Apple Events의 자바스크립트 허용"
+- [Excel 비밀번호 제거 방법](project_excel_password_removal.md) — msoffcrypto-tool을 사용하여 암호화된 .xlsx 파일 복호화 절차
