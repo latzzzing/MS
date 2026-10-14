@@ -15,3 +15,4 @@
 - [Chrome AppleScript JS 토글](feedback_chrome_applescript_js.md) — 자동 로그인 실패 시 1순위 의심: 보기→개발자 정보→"Apple Events의 자바스크립트 허용"
 - [Excel 비밀번호 제거 방법](project_excel_password_removal.md) — msoffcrypto-tool을 사용하여 암호화된 .xlsx 파일 복호화 절차
 - [배민 정산 요약 절차](project_baemin_settlement_daily.md) — 배달처리비 다운로드, 복호화, 빈 금액 검증/10분 재다운로드, 라이더별 요약 시트 생성 자동화
+- [배공 조회세션 상시 유지](feedback_baegong_session_always_on.md) — 세션 만료 발견 시 묻지 말고 즉시 재로그인. 크론 keep-alive는 별건(중복 주의)
